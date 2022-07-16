@@ -1,0 +1,688 @@
+
+
+/*Estilos comunes*/
+body {
+    margin: 0px;
+}
+
+.header {
+    top       : 0px;
+    left      : 0px;
+    width     : 100%;
+    height    : 69px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #8395A7;
+    opacity   : 1;
+    display   : flex;
+    contain   : content;
+}
+
+.header .title {
+    top     : 14px;
+    left    : 70px;
+    width   : 180px;
+    height  : 54px;
+    position: absolute;
+}
+
+.header .title span {
+    text-transform: capitalize;
+    opacity       : 1;
+}
+
+.header .title .text1 {
+    color         : var(--unnamed-color-425966);
+    text-align    : left;
+    font          : normal normal normal 40px/54px Monster Clubhouse;
+    letter-spacing: 1.15px;
+    color         : #425966;
+}
+
+.header .title .text2 {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : left;
+    font          : normal normal normal 30px/46px Poppins;
+    letter-spacing: 0.86px;
+    color         : #D84A4A;
+    opacity       : 1;
+}
+
+.header .menuHead {
+    position: absolute;
+    right   : 65px;
+}
+
+.icoHome {
+    height               : 25px;
+    width                : 25px;
+    background-image     : url(./assets/icons/ic_home.svg);
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-position-x: center;
+    position             : absolute;
+}
+#carruselfin.carrusel{
+    overflow-x: auto;
+}
+.header .menuHead ul {
+    display   : flex;
+    list-style: none;
+    font      : normal normal normal 13px/20px Poppins;
+}
+
+.header .menuHead li {
+    color         : var(--unnamed-color-425966);
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #425966;
+    opacity       : 1;
+    padding       : 0px 15px;
+}
+
+.header .menuHead li.selected {
+    color: #D84A4A;
+}
+
+.header .menuHead li:hover {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #D84A4A;
+    opacity       : 1;
+    cursor        : pointer;
+}
+
+.headform .imgHead {
+    background-size  : 100% 100%;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    width            : 100%;
+    contain          : content;
+}
+
+.headform .imgHead .floatText {
+    position      : absolute;
+    display       : flex;
+    flex-direction: column;
+    width         : 300px;
+}
+
+.headform .imgHead .floatText .text1 {
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #FFFFFF;
+    opacity       : 1;
+    height        : 79px;
+}
+
+.headform .imgHead .floatText .text2 {
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #FFFFFF;
+    opacity       : 1;
+}
+
+.middle {
+    contain : content;
+    width   : 100%;
+    position: absolute;
+}
+
+.middle .middleTitle {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #D84A4A;
+    opacity       : 1;
+}
+
+.middle .carrusel {
+    width         : 100%;
+    height        : auto;
+    display       : flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.middle .carrusel .tarjet {
+    opacity      : 1;
+    position     : relative;
+    box-shadow   : 10px 10px 20px -5px #cccccc;
+    border-radius: 15px;
+    margin-top   : 25px;
+    margin-right : 25.82px;
+    transition   : height 0.2s;
+    list-style   : none;
+    background   : transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.middle .carrusel .tarjet .plate {
+    position         : relative;
+    top              : -25px;
+    background-size  : 100% 100%;
+    background-repeat: no-repeat;
+    background-size  : cover;
+}
+
+.middle .carrusel .tarjet .textFood {
+    width     : 100%;
+    text-align: center;
+    margin-top: -6px;
+}
+
+.middle .carrusel .tarjet .textFood .food {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : center;
+    letter-spacing: -0.6px;
+    color         : #D84A4A;
+}
+
+.middle .carrusel .tarjet .textFood .foodDesc {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : center;
+    letter-spacing: -0.6px;
+    color         : #D84A4A;
+}
+
+.middle .carrusel .tarjet .score {
+    display       : flex;
+    flex-direction: row;
+    padding-left  : 11.89px;
+    bottom        : 12.5px;
+    position      : absolute;
+    width         : -webkit-fill-available;
+    align-items   : center;
+}
+
+.middle .carrusel .tarjet .score span {
+    color         : var(--unnamed-color-425966);
+    text-align    : left;
+    letter-spacing: -0.52px;
+    color         : #425966;
+    opacity       : 1;
+    position      : absolute;
+}
+
+.middle .carrusel .tarjet .score .heart {
+    position: absolute;
+    right   : 19.91px;
+}
+
+.middle .carrusel .tarjet .hoverTarjet {
+    flex-direction: column;
+    display       : flex;
+}
+
+.middle .carrusel .tarjet .hoverTarjet .descriptionHover {
+    flex-direction: column;
+    display       : flex;
+    align-items   : center;
+    text-align    : center;
+    margin-bottom : 15px;
+}
+
+.middle .carrusel .tarjet .hoverTarjet .descriptionHover img {
+    width : 17px;
+    height: 17px;
+}
+
+.middle .carrusel .tarjet .hoverTarjet .descriptionHover .titTextHover {
+    color         : var(--unnamed-color-d84a4a);
+    text-align    : center;
+    font          : normal normal normal 17px/20px Monster Clubhouse;
+    letter-spacing: 0px;
+    color         : #D84A4A;
+}
+
+.middle .carrusel .tarjet .hoverTarjet .descriptionHover .textHover {
+    color         : var(--unnamed-color-425966);
+    text-align    : center;
+    font          : normal normal normal 15px/20px Poppins;
+    letter-spacing: 0px;
+    color         : #425966;
+}
+
+.footer {
+    width     : 100%;
+    background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 4px 6px 23px #A9A9A911;
+    opacity   : 1;
+    bottom    : 23px;
+    position  : absolute;
+}
+
+.footer .textfooter {
+    width         : 381px;
+    height        : 83px;
+    position      : absolute;
+    color         : var(--unnamed-color-425966);
+    text-align    : left;
+    letter-spacing: NaNpx;
+    color         : #425966;
+    opacity       : 1
+}
+
+.footer .textfooter span {
+    color         : var(--unnamed-color-425966);
+    text-align    : left;
+    letter-spacing: 0px;
+    color         : #425966;
+}
+
+.middle .carrusel .tarjet .divhover {
+    top     : 145px;
+    position: absolute;
+    width   : -webkit-fill-available;
+}
+
+.menuHeads {
+    background-color: transparent;
+    position        : absolute;
+}
+
+.menuHeads .tarjetMenu {
+    background    : transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    box-shadow    : 0px 5px 9px #8395A766;
+    border-radius : 10px;
+    opacity       : 1;
+    align-items   : center;
+    text-align    : center;
+    flex-direction: column;
+    display       : flex;
+    margin-right  : 14px;
+    contain       : content;
+}
+
+.menuHeads .tarjetMenu .imgMenu {
+    margin-top: 13.83px;
+    width     : 31px;
+    height    : 33px;
+}
+
+.menuHeads .tarjetMenu span {
+    color         : var(--unnamed-color-425966);
+    text-align    : center;
+    font          : normal normal medium 13px/20px Poppins;
+    letter-spacing: 0px;
+    color         : #425966;
+    opacity       : 1;
+    bottom        : 8.74px;
+    position      : absolute;
+}
+
+.conCarrusel {
+    overflow: hidden;
+}
+
+/*Screen máximo 428px*/
+@media (max-width: 428px) {
+    .menuHead {
+        display: none;
+    }
+
+    .icoHome {
+        display: block;
+        top    : 24px;
+        right  : 33px;
+    }
+
+    #carruselini {
+        display: none;
+    }
+
+    #carruselfin {
+        display: flex;
+    }
+
+    .normalTarjet {
+        width: 180px;
+    }
+
+    .menuHeads {
+        display  : flex;
+        top      : 280px;
+        flex-wrap: wrap;
+        left     : 30.9px;
+    }
+
+    .imgHead {
+        height          : 234px;
+        background-image: url(./assets/bcq.jpg);
+    }
+
+    .headform .imgHead .floatText {
+        top : 50px;
+        left: 56.5px;
+    }
+
+    .middle {
+        top: 500px;
+    }
+
+    body {
+        height : 926px;
+        contain: content;
+        width  : 428px;
+    }
+
+    .footer {
+        height: 70px;
+    }
+
+    .footer .imgFooter {
+        top     : -20px;
+        left    : 190px;
+        width   : 228px;
+        height  : 106px;
+        position: absolute;
+    }
+
+    .footer .textfooter {
+        left: 23.38px;
+        font: normal normal normal 23px/31px Monster Clubhouse;
+        top : 20.3px;
+    }
+
+    .headform .imgHead .floatText .text1 {
+        font: normal normal normal 51px/77px Poppins;
+    }
+
+    .headform .imgHead .floatText .text2 {
+        font      : normal normal normal 51px/69px Monster Clubhouse;
+        margin-top: -30px;
+    }
+
+    .menuHeads .tarjetMenu {
+        width        : 114px;
+        height       : 92px;
+        margin-bottom: 15px;
+    }
+
+    .middle .middleTitle {
+        padding-left: 64px;
+        font        : normal normal normal 54px/74px Monster Clubhouse;
+    }
+
+    .middle .carrusel {
+        top            : -25px;
+        position       : relative;
+        justify-content: flex-start;
+    }
+
+    .middle .carrusel .tarjet {
+        width : 180px;
+        height: 182px;
+    }
+
+    .middle .carrusel .tarjet .plate {
+        width      : 111px;
+        height     : 107px;
+        margin-left: 34.84px;
+
+    }
+
+    .middle .carrusel .tarjet .score span {
+        font: normal normal normal 17px/26px Poppins;
+        left: 33.45px;
+    }
+
+    .middle .carrusel .tarjet .score .star {
+        height: 16px;
+        width : 16px;
+    }
+
+    .middle .carrusel .tarjet .score .heart {
+        height: 16px;
+        width : 16px;
+    }
+
+    .middle .carrusel .tarjet .textFood .foodDesc {
+        font: normal normal normal 20px/27px Monster Clubhouse;
+    }
+
+    .middle .carrusel .tarjet .textFood .food {
+        font: normal normal normal 20px/27px Poppins;
+    }
+
+    .headform .imgHead {
+        background-repeat    : no-repeat;
+        background-size      : cover;
+        background-position-x: center;
+    }
+}
+
+/*Screen entre 429px y 768px*/
+@media (min-width: 429px) and (max-width: 768px){
+    .menuHead {
+        display: none;
+    }
+
+    .icoHome {
+        display: block;
+        top    : 24px;
+        right  : 25px;
+    }
+
+    #carruselini {
+        display: none;
+    }
+
+    #carruselfin {
+        display: flex;
+    }
+    
+    .menuHeads {
+        display: flex;
+        top    : 288px;
+        left   : 20px;
+    }
+
+    .imgHead {
+        height          : 249px;
+        background-image: url(./assets/bcq.jpg);
+    }
+
+    .headform .imgHead .floatText {
+        top : 50px;
+        left: 121.55px;
+    }
+
+    .normalTarjet {
+        width: 266px;
+    }
+
+    .middle {
+        top: 406px;
+    }
+
+    .middle .carrusel {
+        justify-content: flex-start;
+    }
+
+    body {
+        height : 1024px;
+        contain: content;
+        width  : 768px;
+    }
+
+    .footer {
+        height: 115.65px;
+    }
+
+    .footer .imgFooter {
+        top     : -46px;
+        left    : 328.39px;
+        width   : 379px;
+        height  : 175px;
+        position: absolute;
+    }
+
+    .footer .textfooter {
+        left: 49px;
+        font: normal normal normal 39px/53px Monster Clubhouse;
+        top : 30.3px;
+    }
+
+    .headform .imgHead .floatText .text1 {
+        font: normal normal normal 74px/111px Poppins;
+    }
+
+    .headform .imgHead .floatText .text2 {
+        font      : normal normal normal 67px/91px Monster Clubhouse;
+        margin-top: -10px;
+    }
+
+    .menuHeads .tarjetMenu {
+        width : 106px;
+        height: 85px;
+    }
+
+    .middle .middleTitle {
+        padding-left: 70px;
+        font        : normal normal normal 67px/91px Monster Clubhouse;
+    }
+
+    .middle .carrusel .tarjet {
+        height: 269px;
+        width : 266px;
+    }
+
+    .middle .carrusel .tarjet .plate {
+        width      : 164px;
+        height     : 158px;
+        margin-left: 51.55px;
+    }
+
+    .middle .carrusel .tarjet .score span {
+        font: normal normal normal 26px/39px Poppins;
+        left: 47.5px;
+    }
+
+    .middle .carrusel .tarjet .textFood .foodDesc {
+        font: normal normal normal 30px/40px Monster Clubhouse;
+    }
+
+    .middle .carrusel .tarjet .textFood .food {
+        font: normal normal normal 30px/40px Poppins;
+    }
+
+    .headform .imgHead {
+        background-size  : 100% 100%;
+        background-repeat: no-repeat;
+        background-size  : cover;
+    }
+}
+
+/*Screen mayor a 768px*/
+@media (min-width: 769px) {
+    .menuHead {
+        display: flex;
+    }
+
+    .icoHome {
+        display: none;
+    }
+
+    #carruselini {
+        display: flex;
+    }
+
+    #carruselfin {
+        display: none;
+    }
+
+    .menuHeads {
+        display: none;
+    }
+
+    .imgHead {
+        height          : 416px;
+        background-image: url(./assets/bcq.jpg);
+    }
+
+    .headform .imgHead .floatText {
+        top : 134px;
+        left: 261px;
+    }
+
+    .middle {
+        top: 513px;
+    }
+
+    body {
+        height : 1280px;
+        contain: content;
+    }
+
+    .middle .carrusel {
+        justify-content: center;
+    }
+
+    .footer {
+        height: 167px;
+    }
+
+    .footer .imgFooter {
+        top     : -46px;
+        left    : 673px;
+        width   : 536px;
+        height  : 248px;
+        position: absolute;
+    }
+
+    .footer .textfooter {
+        left: 166px;
+        font: normal normal normal 56px/76px Monster Clubhouse;
+        top : 52.3px;
+    }
+
+    .headform .imgHead .floatText .text1 {
+        font: normal normal normal 74px/111px Poppins;
+    }
+
+    .headform .imgHead .floatText .text2 {
+        font      : normal normal normal 67px/91px Monster Clubhouse;
+        margin-top: -10px;
+    }
+
+    .middle .middleTitle {
+        padding-left: 70px;
+        font        : normal normal normal 67px/91px Monster Clubhouse;
+    }
+
+    .middle .carrusel .tarjet {
+        height: 269px;
+        width : 266px;
+    }
+
+    .middle .carrusel .tarjet .plate {
+        width      : 164px;
+        height     : 158px;
+        margin-left: 51.55px;
+    }
+
+    .middle .carrusel .tarjet .score span {
+        font: normal normal normal 26px/39px Poppins;
+        left: 47.5px;
+    }
+
+    .middle .carrusel .tarjet .textFood .foodDesc {
+        font: normal normal normal 30px/40px Monster Clubhouse;
+    }
+
+    .middle .carrusel .tarjet .textFood .food {
+        font: normal normal normal 30px/40px Poppins;
+    }
+
+    .middle .carrusel .tarjet:hover {
+        width  : 266px;
+        height : 386px;
+        opacity: 1;
+    }
+
+    .headform .imgHead {
+        background-size  : 100% 100%;
+        background-repeat: no-repeat;
+        background-size  : cover;
+    }
+}
