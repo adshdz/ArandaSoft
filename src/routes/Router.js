@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
 import Comidas from '../components/Comidas';
 import Home from '../components/Home';
 import Menus from '../components/Menus';
@@ -12,7 +12,7 @@ import Vegetarianos from '../components/Vegetarianos';
 function Router(props) {
     return (
         <>
-        
+
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home />} />
@@ -22,7 +22,7 @@ function Router(props) {
                     <Route path='/sopas' element={<Sopas />} />
                     <Route path='/tortas' element={<Tortas />} />
                     <Route path='/vegetarianos' element={<Vegetarianos />} />
-                    <Route path='/*' element={<Error/>} />
+                    <Route path='/*' element={<Error />} />
                 </Routes>
             </BrowserRouter>
         </>

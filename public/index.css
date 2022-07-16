@@ -70,7 +70,7 @@ body {
     font      : normal normal normal 13px/20px Poppins;
 }
 
-.header .menuHead li {
+.header .menuHead li a {
     color         : var(--unnamed-color-425966);
     text-align    : left;
     letter-spacing: 0px;
@@ -685,4 +685,16 @@ body {
         background-repeat: no-repeat;
         background-size  : cover;
     }
+}
+
+.header ul li a{
+    margin-top: 55px;
+    padding-top: 25px;
+    text-decoration: none;
+
+}
+
+
+.menuHead ul{
+    margin-top: 25px ;
 }
