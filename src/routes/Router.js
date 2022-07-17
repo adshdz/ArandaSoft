@@ -18,8 +18,9 @@ function Router(props) {
 
     return (
         <>
-            <BrowserRouter>
-                <ApiContext.Provider value={{ setcategoria, api }}>
+            <ApiContext.Provider value={{ setcategoria, api }}>
+                <BrowserRouter>
+
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='/comidas' element={<Comidas />} />
@@ -30,8 +31,9 @@ function Router(props) {
                         <Route path='/vegetarianos' element={<Vegetarianos />} />
                         <Route path='/*' element={<Error />} />
                     </Routes>
-                </ApiContext.Provider>
-            </BrowserRouter>
+
+                </BrowserRouter>
+            </ApiContext.Provider>
         </>
     );
 }
