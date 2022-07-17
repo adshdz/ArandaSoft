@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react';
-import createTarjets from "../helper/base"
+import React from 'react';
 
 function Header(props) {
 
-    useEffect(()=>{
-        createTarjets();
-    },[])
 
     return (
         <>
@@ -17,13 +13,13 @@ function Header(props) {
 
                     <div className="menuHead">
                     <ul>
-                        <li><a href="/" className="selected">Home</a></li>
-                        <li><a href='/comidas' className="selected">Comida R&aacute;pida</a></li>
-                        <li><a href="/menus" className="selected">Men&uacute; Ni&ntilde;os</a></li>
-                        <li><a href="/principales" className="selected">Platos Principales</a></li>
-                        <li><a href="/sopas" className="selected">Sopas</a></li>
-                        <li><a href="/tortas" className="selected">Tortas</a></li>
-                        <li><a href="/vegetarianos" className="selected">Vegetarianos</a></li>
+                        <li><a href="/" className={({isActive}) =>isActive?"seleccionado" :"selected" }>Home</a></li>
+                        <li><a href='/comidas' className={({isActive}) =>isActive?"seleccionado" :"selected"}>Comida R&aacute;pida</a></li>
+                        <li><a href="/menus" className={({isActive}) =>isActive?"seleccionado" :"selected"}>Men&uacute; Ni&ntilde;os</a></li>
+                        <li><a href="/principales" className={({isActive}) =>isActive?"seleccionado" :"selected"}>Platos Principales</a></li>
+                        <li><a href="/sopas" className={({isActive}) =>isActive?"seleccionado" :"selected"}>Sopas</a></li>
+                        <li><a href="/tortas" className={({isActive}) =>isActive?"seleccionado" :"selected"}>Tortas</a></li>
+                        <li><a href="/vegetarianos" className={({isActive}) =>isActive?"seleccionado" :"selected"}>Vegetarianos</a></li>
                     </ul>
                 </div>
                   

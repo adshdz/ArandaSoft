@@ -698,3 +698,12 @@ body {
 .menuHead ul{
     margin-top: 25px ;
 }
+
+.menuHead ul li .seleccionado{
+    background-color: #D84A4A !important
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}

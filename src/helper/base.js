@@ -3,13 +3,6 @@ tarjets.push({ idnormal: "normal1", idhover: "hover1", imgPlate: "./assets/Ojing
 tarjets.push({ idnormal: "normal2", idhover: "hover2", imgPlate: "./assets/Ojingeo-muchim.png", food: "Cola", foodDesc: "Chicken", calification: "5.0" });
 tarjets.push({ idnormal: "normal3", idhover: "hover3", imgPlate: "./assets/Ojingeo-muchim-1.png", food: "Roasted", foodDesc: "Carrot", calification: "4.5" });
 tarjets.push({ idnormal: "normal4", idhover: "hover4", imgPlate: "./assets/cherry.png", food: "Sweet", foodDesc: "Cherries", calification: "4.0" });
-const tarjets2 = [];
-tarjets2.push({ idnormal: "tarhead1", imgMenu: "./assets/icons/ic_vegetarian.svg", food: "Vegetarianos" });
-tarjets2.push({ idnormal: "tarhead2", imgMenu: "./assets/icons/ic_main.svg", food: "Principales" });
-tarjets2.push({ idnormal: "tarhead3", imgMenu: "./assets/icons/ic_cake.svg", food: "Tortas" });
-tarjets2.push({ idnormal: "tarhead4", imgMenu: "./assets/icons/ic_fast-food.svg", food: "R&aacute;pida" });
-tarjets2.push({ idnormal: "tarhead5", imgMenu: "./assets/icons/ic_kids.svg", food: "Men&uacute; Ni&ntilde;os" });
-tarjets2.push({ idnormal: "tarhead6", imgMenu: "./assets/icons/ic_soup.svg", food: "Sopas" });
 /**muestra panel hover */
 function showHover(idNormal, idHover) {
     document.getElementById(idNormal).setAttribute("hidden", true);
@@ -21,16 +14,7 @@ function showNormal(idNormal, idHover) {
     document.getElementById(idHover).setAttribute("hidden", true);
 }
 
-/**Alimenta menu Head2 */
-function displayHead2() {
-    const head2 = document.getElementById("menuHead2");
-    tarjets2.forEach(element => {
-        head2.insertAdjacentHTML('beforeend', `<div class="tarjetMenu"> 
-        <img class="imgMenu" src=`+ element.imgMenu + `>
-        <span class="foodMenu">`+ element.food + `</span>
-    </div>`)
-    });
-}
+
 /**alimenta menu principal */
 function displayMenuhead() {
     const carrusel = document.getElementById("carruselini");
@@ -94,8 +78,7 @@ function displayMenuheadfin() {
 /**renderiza tarjetas */
 function createTarjets(){
     displayMenuhead();
-    displayHead2();
-    displayMenuheadfin();
-}
+    displayMenuheadfin()
+    }
 
 export default createTarjets;
